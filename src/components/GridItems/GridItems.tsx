@@ -49,6 +49,7 @@ export default () => {
   const deaths = useStore(s => s.deaths) // Observable
 
   if (deaths.length) {
+
     return (
       <Grid spacing={2} container>
         {deaths.map((el, i) => {
@@ -75,5 +76,5 @@ export default () => {
         })}
       </Grid>
     )
-  } else return <h2 style={{ fontWeight: 300 }}>Совпадений не найдено</h2>
+  } else return <h2 style={{ fontWeight: 300 }}>Срвпадений не найдено.</h2>
 }

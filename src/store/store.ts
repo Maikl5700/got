@@ -1,7 +1,6 @@
 import { observable as o, action as a } from 'mobx'
 import { getDeaths, TDeaths } from './deaths'
-
-
+import _ from 'lodash'
 
 
 
@@ -45,7 +44,9 @@ export { store, Store }
 
 
 
+// Привет.Вот результат тестового https://github.com/Maikl5700/got. Делал примерно часов 12-15.
 
+// Ищу постоянную работу фуллтайм 40 часов на длительный срок.Приступить смогу через 2 - 3 недели.Ип у меня нет.
 
 const getMatches = (deaths: TDeaths[], value: string) => {
   return deaths.filter(d => {
